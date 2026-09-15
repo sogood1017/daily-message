@@ -71,7 +71,7 @@ body {
   /* ★ 글자 크기
      크게: 20px, 21px...
      작게: 18px, 17px... */
-  font-size: 14px;
+  font-size: 15px;
 
   /* ★ 줄 간격
      숫자를 줄이면 촘촘, 늘리면 넓어짐 */
@@ -82,5 +82,5 @@ body {
   letter-spacing: -0.035em;
 
   /* 글씨 굵기: 400 = 보통 */
-  font-weight: 400;
+  font-weight: 500;
 }
