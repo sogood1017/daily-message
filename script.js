@@ -29,7 +29,7 @@ const START_DATE = '2026-09-15';
   실제 NFC 운영을 시작할 때는:
   const TEST_ID = null;
 */
-const TEST_ID =null;
+const TEST_ID =15;
 
 
 /*
