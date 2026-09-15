@@ -49,7 +49,7 @@ body {
   /* 종이 질감 배경 */
    background:
   linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
-  url("paper2.jfif") center top / cover no-repeat;
+  url("paper3.jfif") center top / cover no-repeat;
 
   /* PC에서 종이 가장자리에 아주 약한 그림자 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
