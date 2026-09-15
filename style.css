@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400&display=swap');
 /* ================================
    전체 기본 설정
    ================================ */
@@ -14,7 +15,7 @@ body {
 
 body {
   /* 기본 글꼴 */
-  font-family: "AppleMyungjo", serif;
+  font-family: "Noto Serif KR", serif;
   color: #222222;
 }
 
