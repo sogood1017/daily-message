@@ -1,1 +1,133 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>너에게</title><link rel="stylesheet" href="style.css"></head><body><main class="paper"><div id="date" class="date"></div><article id="message" class="message" aria-live="polite">글을 불러오는 중...</article></main><script src="script.js"></script></body></html>
+<!doctype html>
+
+<!--
+  페이지 언어를 한국어로 설정
+-->
+<html lang="ko">
+
+<head>
+
+  <!--
+    한글이 깨지지 않도록 문자 인코딩을 UTF-8로 설정
+  -->
+  <meta charset="utf-8">
+
+
+  <!--
+    ★ 모바일 화면 설정
+
+    width=device-width
+    → 아이폰 등 기기의 실제 화면 너비에 맞춤
+
+    initial-scale=1
+    → 처음 페이지를 열었을 때 확대/축소 없이 100%로 표시
+
+    viewport-fit=cover
+    → 아이폰 화면 영역을 자연스럽게 사용
+  -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+
+  <!--
+    ★ 브라우저 탭에 표시되는 페이지 이름
+    원하는 문구로 변경 가능
+
+    예:
+    <title>오늘의 글</title>
+    <title>너에게</title>
+  -->
+  <title>너에게</title>
+
+
+  <!--
+    ★ 디자인 파일(style.css)을 불러오는 부분
+
+    글씨 크기, 위치, 폰트, 배경 이미지 등은
+    대부분 style.css에서 설정함
+  -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+  <!--
+    ================================
+    종이 화면 전체 영역
+    ================================
+
+    class="paper"의 디자인은
+    style.css의 .paper 부분에서 설정함
+  -->
+  <main class="paper">
+
+
+    <!--
+      ================================
+      오늘 날짜가 표시되는 자리
+      ================================
+
+      화면에는 예를 들어
+
+      2026. 09. 15
+
+      형태로 표시됨.
+
+      실제 날짜 계산은 script.js가 자동으로 처리함.
+
+      날짜의 크기/색상/본문과의 간격 등은
+      style.css의 .date에서 수정
+    -->
+    <div id="date" class="date"></div>
+
+
+    <!--
+      ================================
+      오늘의 글귀가 표시되는 자리
+      ================================
+
+      message.csv에서 오늘에 해당하는 글귀를
+      script.js가 불러와 이 자리에 넣어줌.
+
+      글자 크기/줄간격/자간 등은
+      style.css의 .message에서 수정
+
+      "글을 불러오는 중..."은
+      CSV를 불러오기 전 잠깐 표시되는 기본 문구
+    -->
+    <article
+      id="message"
+      class="message"
+      aria-live="polite"
+    >
+      글을 불러오는 중...
+    </article>
+
+
+  </main>
+
+
+  <!--
+    ================================
+    기능을 담당하는 JavaScript
+    ================================
+
+    script.js에서 하는 일:
+
+    1. 한국 날짜 확인
+    2. 화면에 yyyy. mm. dd 표시
+    3. message.csv 불러오기
+    4. 오늘 날짜에 해당하는 글귀 선택
+    5. 위의 #message 영역에 글귀 표시
+
+    TEST_ID 설정도 script.js에 있음.
+  -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
