@@ -36,7 +36,7 @@ const START_DATE = '2026-09-15';
   로 변경하면 START_DATE를 기준으로
   날짜에 따라 글귀가 자동으로 바뀜.
 */
-const TEST_ID = 10;
+const TEST_ID = 6;
 
 
 /*
