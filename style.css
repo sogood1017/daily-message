@@ -1,5 +1,167 @@
+/* 웹에서 사용할 한글 명조체 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500&display=swap');
-*{box-sizing:border-box} html,body{margin:0;min-height:100%;background:#eee} body{font-family:"Noto Serif KR",serif;color:#222}
-.paper{width:min(100%,736px);min-height:100svh;margin:0 auto;padding-top:120px;padding-left:30px;padding-right:30px;padding-bottom:20px;background:#fafafa url("paper3.jfif") center top/cover no-repeat;box-shadow:0 0 30px rgba(0,0,0,.06)}
-.date{font-family:"Noto Serif KR",serif;font-size:12px;line-height:1.4;letter-spacing:.02em;font-weight:400;color:#444;margin-bottom:18px}
-.message{font-family:"Noto Serif KR",serif;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;font-size:14px;line-height:1.5;letter-spacing:-.035em;font-weight:400}
+
+
+/* ================================
+   전체 기본 설정
+   ================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #eeeeee;
+}
+
+body {
+  /* 전체 기본 글꼴 */
+  font-family: "Noto Serif KR", serif;
+
+  /* 전체 기본 글자 색상 */
+  color: #222222;
+}
+
+
+/* ================================
+   종이 / 배경 영역
+   ================================ */
+
+.paper {
+
+  /* 종이의 최대 너비 */
+  width: min(100%, 736px);
+
+  /* 최소 높이 = 휴대폰 화면 전체 */
+  min-height: 100svh;
+
+  /* PC에서 종이를 화면 가운데 정렬 */
+  margin: 0 auto;
+
+
+  /* ★ 날짜 + 글귀 전체의 위쪽 위치
+     숫자를 줄이면 위로 올라감
+     숫자를 늘리면 아래로 내려감 */
+  padding-top: 120px;
+
+
+  /* ★ 왼쪽 여백
+     숫자를 늘리면 글이 오른쪽으로 이동 */
+  padding-left: 30px;
+
+
+  /* ★ 오른쪽 여백
+     숫자를 늘리면 오른쪽 공간이 더 넓어짐 */
+  padding-right: 30px;
+
+
+  /* 페이지 아래쪽 여백 */
+  padding-bottom: 20px;
+
+
+  /* ★ 배경 이미지
+     현재 paper3.jfif 사용 */
+  background:
+    #fafafa
+    url("paper3.jfif")
+    center top / cover
+    no-repeat;
+
+
+  /* PC에서 종이 가장자리에 약한 그림자 */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================================
+   날짜
+   ================================ */
+
+.date {
+
+  /* 날짜 글꼴 */
+  font-family: "Noto Serif KR", serif;
+
+
+  /* ★ 날짜 글자 크기
+     숫자를 늘리면 커지고
+     줄이면 작아짐 */
+  font-size: 12px;
+
+
+  /* ★ 날짜 자체의 줄간격 */
+  line-height: 1.4;
+
+
+  /* ★ 날짜 글자 사이 간격(자간)
+     0 = 기본
+     숫자가 커질수록 글자 사이가 넓어짐 */
+  letter-spacing: 0.02em;
+
+
+  /* ★ 날짜 글씨 굵기
+     400 = 보통
+     500 = 조금 굵게 */
+  font-weight: 400;
+
+
+  /* ★ 날짜 글씨 색상
+     #222222 = 진함
+     #444444 = 현재
+     #666666 = 더 연함 */
+  color: #444444;
+
+
+  /* ★ 날짜와 본문 사이 간격
+     숫자를 늘리면 더 멀어짐
+     현재보다 넓게 하고 싶으면 30~35px 추천 */
+  margin-bottom: 35px;
+}
+
+
+/* ================================
+   실제 글귀
+   ================================ */
+
+.message {
+
+  /* 글귀 글꼴 */
+  font-family: "Noto Serif KR", serif;
+
+
+  /* CSV에서 직접 넣은 줄바꿈을 그대로 표시 */
+  white-space: pre-wrap;
+
+
+  /* 한글 단어가 가능하면 중간에서 잘리지 않게 함 */
+  word-break: keep-all;
+
+
+  /* 한 줄이 화면보다 길면 자동 줄바꿈 */
+  overflow-wrap: break-word;
+
+
+  /* ★ 본문 글자 크기 */
+  font-size: 14px;
+
+
+  /* ★ 본문 줄간격
+     숫자를 줄이면 촘촘
+     숫자를 늘리면 넓어짐 */
+  line-height: 1.5;
+
+
+  /* ★ 본문 글자 사이 간격(자간)
+     0 = 기본
+     음수일수록 글자가 조금 더 촘촘해짐 */
+  letter-spacing: -0.035em;
+
+
+  /* ★ 본문 글씨 굵기
+     400 = 보통
+     500 = 조금 더 또렷하게 */
+  font-weight: 400;
+}
