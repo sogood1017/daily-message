@@ -47,7 +47,7 @@ body {
   padding-bottom: 20px;
 
   /* 종이 질감 배경 */
-  background: #fafafa url("paper2.jfif") center top / cover no-repeat;
+  background: #fafafa url("paper3.jfif") center top / cover no-repeat;
 
   /* PC에서 종이 가장자리에 아주 약한 그림자 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
