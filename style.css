@@ -58,6 +58,7 @@ body {
    실제 글귀
    ================================ */
 .message {
+   font-family: "Noto Serif KR", serif;
   /* CSV 셀 안에서 직접 넣은 줄바꿈을 그대로 표시 */
   white-space: pre-wrap;
 
