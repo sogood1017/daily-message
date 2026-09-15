@@ -6,7 +6,7 @@ const START_DATE = '2026-09-15'; // 1번 글귀가 표시될 한국 날짜
 // 10번을 보고 싶으면 10
 // 5번을 보고 싶으면 5
 // 실제 날짜대로 자동 표시하려면 null
-const TEST_ID = 10;
+const TEST_ID = 9;
 
 const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
 
