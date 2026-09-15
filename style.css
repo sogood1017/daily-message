@@ -48,7 +48,7 @@ body {
 
   /* 종이 질감 배경 */
    background:
-  linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)),
+  linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
   url("paper2.jfif") center top / cover no-repeat;
 
   /* PC에서 종이 가장자리에 아주 약한 그림자 */
